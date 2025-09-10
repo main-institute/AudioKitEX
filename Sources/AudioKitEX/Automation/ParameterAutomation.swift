@@ -24,7 +24,7 @@ public extension ParameterAutomationPoint {
     }
 }
 
-extension ParameterAutomationPoint: Equatable {
+extension ParameterAutomationPoint: @retroactive Equatable {
     /// Equality check
     /// - Parameters:
     ///   - lhs: Left hand side

@@ -6,7 +6,7 @@ import AudioKit
 
 #if !os(tvOS)
 
-extension SequenceNote: Equatable {
+extension SequenceNote: @retroactive Equatable {
     /// Equality check
     /// - Parameters:
     ///   - lhs: Left hand side
@@ -18,7 +18,7 @@ extension SequenceNote: Equatable {
     }
 }
 
-extension SequenceEvent: Equatable {
+extension SequenceEvent: @retroactive Equatable {
     /// Equality check
     /// - Parameters:
     ///   - lhs: Left hand side
